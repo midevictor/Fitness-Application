@@ -9,6 +9,9 @@ import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
 import {motion} from "framer-motion";
 
+
+
+
 type Props = {
   setSelectedPage: (value: SelectedPage) => void
 }
@@ -20,8 +23,8 @@ const Home = ({ setSelectedPage }: Props) => {
       id="home"
       className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'>
       <motion.div
-      onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
-       className='mx-auto w-5/6 items-center justify-center md:flex md:h-5/6'>
+      onViewportEnter={() => setSelectedPage(SelectedPage.Home )}
+       className='mx-auto w-5/6 items-center justify-center md:flex md:h-5/6 mt-12 '>
         <div className="z-10  md:basis-3/5">
           <motion.div 
           className="md:-mt-20"
